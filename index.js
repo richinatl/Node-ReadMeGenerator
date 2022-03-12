@@ -129,10 +129,37 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+const writeToFile = (data) => {
+  return new Promise((resolve, reject) => {
+    // make a readme file and add to dist folder, catch any errors
+    fs.writeFile("./dist/README.md", data, (err) => {
+      if (err) {
+        reject(err);
+        return;
+      }
+      resolve({
+        ok: true,
+        message: console.log(
+          'Success! Navigate to the "dist" folder to see your README!'
+        ),
+      });
+    });
+  });
+};
 
 // TODO: Create a function to initialize app
-function init() {}
+const init = () => {
+  return inquirer.prompt(questions);
+};
 
 // Function call to initialize app
-init();
+init()
+  .then((userInput) => {
+    return generateMarkdown(userInput);
+  })
+  .then((readmeInfo) => {
+    return writeToFile(readmeInfo);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
