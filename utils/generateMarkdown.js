@@ -33,7 +33,7 @@ function renderLicenseSection(license) {
     return ``;
   } else {
     return `## Licenses
-    This project is covered under the ${license} license. To learn more about what this means, click the license button at the top.`;
+    This project is covered under the ${license} license. To learn more click the license button at the top.`;
   }
 }
 
