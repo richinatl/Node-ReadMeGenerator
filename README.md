@@ -12,7 +12,7 @@
  
  
  ## Description
-  a simple way to make a readme to save time using node.js
+  A simple way to make a readme to save time using node.js 
   
   
   ## Installation
@@ -26,7 +26,7 @@
   ## Licenses
     This project is covered under the MIT license. To learn more click the license button at the top.
   ## Contributors
-  none, contact me by my email or github with any questions or want to contribute
+  None, contact me by my email or github with any questions or want to contribute
   
   ## Tests
   NA
@@ -40,6 +40,10 @@
   
   ## Credits
   Richard Murphy
+  
+  ## Languages
+  JavaScript running on node.js with an inquirer dependency
+  
   
   ![ReadMeGenerator1](https://user-images.githubusercontent.com/95508564/158685805-b51f8e01-dce3-44cb-ad1d-0fab49b3a4d2.png)
   
