@@ -98,8 +98,8 @@ const questions = [
   },
   {
     type: "input",
-    name: "contributors",
-    message: "Are there any contributors on this project?",
+    name: "contributing",
+    message: "Are there any contributors, how do people contribute?",
   },
   {
     type: "input",
